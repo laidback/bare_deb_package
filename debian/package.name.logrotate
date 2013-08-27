@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# dh_installlogrotate
+# description:
+# install logrotate config files in /etc/logrotate.d/package.name
+#
+# options:
+# --name name of the file to install or auto install of package.name.logrotate
+#
+# after log rotation restart the daemon
+
+/var/log/<package>/*.log {
+    rotate 12
+    weekly
+    compress
+    missingok
+    postrotate
+        start-stop-daemon -K -p /var/run/foo.pid -s HUP -x /usr/sbin/foo -q
+    endscript
+}
+

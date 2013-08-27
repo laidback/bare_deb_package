@@ -1,0 +1,8 @@
+# @see: dh_installdocs
+
+README
+TODO
+debian/notes-for-maintainers.txt
+docs/manual.txt
+docs/manual.pdf
+docs/manual-html/

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# All command scripts, including maintainer scripts inside the package
+# and used by dpkg, should have a #! line naming the shell to be executed
+# to interpret them
+
+# Shell scripts (sh and bash) other than init.d scripts shoud almost
+# certainly start with set -e so that errors are detected. Alternatively
+# you could check the exit status of *every* command.

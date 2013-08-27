@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# either copy configuration files to /etc or some
+# subdirectory of /etc named after your package,
+# or symlink the config file from /etc to your location.
+
+# Behavior:
+# * local changes must be preserved during a package upgrade
+# * conf files must be preserved when the package is removed,
+#   and only deleted when package is purged
+# * conf files without local changes may be removed by the 
+#   package during upgrade.
+
+# alternatively you can use the maintainer scripts to
+# control this behavior. A good practice is to create
+# a package-configure script and call it from postinst
+# if and only if conf file does not exist.
+
+# Therefore you have to:
+# * don't list conffiles here
+# * conf file is not part of the package
+# * create, update and maintain file on remove and purge
+# * scripts have to be idempotent (no mangling, no overwrite)
+

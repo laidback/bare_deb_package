@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Optional upstream source location for the uscan utility which defines
+# how to automatically scan ftp or http sites for newly available updates
+# of the package.

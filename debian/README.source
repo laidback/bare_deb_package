@@ -1,0 +1,9 @@
+# 1. Generate the fully patched source, in a form ready for editing,
+# 	that would be built to create Debian packages. Doing this with
+# 	a patch target in debian/rules is recommanded.
+# 2. Modify the source and save those modifications so they will be
+# 	applied when building the package.
+# 3. Remove source modifications that are currently being applied
+# 	when building the package.
+# 4. Optionally, document what steps are necessary to upgrade the
+# 	Debian source package to a new upstream version, if applicable.

@@ -1,0 +1,74 @@
+# General fields
+
+# contains the name of the source package, evtl. also the version
+# f03smthg (0.0.1-1)
+Source:
+# maintainer info with: fname lname (email@address) in RFC822
+Maintainer:
+# comma separated field like maintainer
+Uploaders: 
+# person who prepared this version of the package
+Changed-By:
+# debian maintainers upload permission for the debian archive
+DM-Upload-Allowed:
+# classification of the area of the application, e.g. web, shell,...
+Section:
+# how important is it to have this package installed
+# (required, important, standard, optional, extra)
+Priority:
+Build-Depends:
+Standards-Version:
+Homepage:
+Vcs-Browser: Gitlab or something
+Vcs-Git: https://host/repository.git -b master
+#Vcs-Bzr:
+#Vcs-Cvs:
+#Vcs-Darcs:
+#Vcs-Hg:
+
+# binary paragraph
+# contains the name of the binary package, evtl. also the version
+# f03smthg (0.0.1-1)
+Package:
+# identifies the required machine architecture, e.g.
+# source (source package), amd64-debian-linux(architecture-vendor-os),
+# also wildcard is ok. E.g. any-debian-linux, amd64-any-linux
+Architecture:
+Section:
+Priority:
+# only in binary package fields. yes or no. Apt refuses to remove package.
+Essential:
+# Package interrelationship fields.
+Depends:
+Pre-Depends:
+Recommends:
+Suggests:
+Breaks:
+Conflicts:
+Provides:
+Replaces:
+Enhances:
+Description: this is a single line synopsis
+ This here is an extended version of the description.
+ It will go into somewhere over the binary bow.
+Homepage:
+#Built-Using:
+
+# source paragraph
+# declares the format version of that file
+Format:
+Source:
+Binary:
+Architecture:
+# version number of the package. Format [epoch:]upstream_version[-debian_revision]
+Version: 0.0.1-1
+Maintainer:
+# date in changelog format
+Date:
+# describe how important it is to upgrade to this version
+# (low, medium, high, emergency, critical) with optional commentary in parenthesis
+Urgency: low (LOW urgency, install if you want)
+# usually extracted from the debian/changelog file.
+Changes: 
+Closes:
+

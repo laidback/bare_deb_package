@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# List all files and their corresponding installation directories
+# Format is a
+# * set of lines with
+#   * "file directory" or
+#   * "file, file, directory"
+# * name of the file is relative to the package build directory
+
+# set error notification
+set -e
+
+# file directory
+

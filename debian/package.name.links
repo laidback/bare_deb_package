@@ -1,0 +1,7 @@
+# Create symlinks in package build directories
+
+# Usually each line contains a pair of names which
+# should be symlinked.
+
+# source destination
+# e.g. dh_link var/lib/foo usr/share/man/man1/foo.1
