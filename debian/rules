@@ -44,6 +44,18 @@
 
 # rules to build the package
 
+override_dh_auto_clean:
+override_dh_auto_build:
+override_dh_auto_test:
+
+# try to auto guess what to install and where,
+# or pass parameters to the underlying mechanism behind
+# the dh_auto_configure (e.g. with python it is )
+override_dh_auto_configure:
+	dh_auto_configure -- --prefix=/usr/local
+
+override_dh_auto_install:
+
 # build debian package
 override_dh_builddeb:
 	dh_builddeb

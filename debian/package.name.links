@@ -4,4 +4,4 @@
 # should be symlinked.
 
 # source destination
-# e.g. dh_link var/lib/foo usr/share/man/man1/foo.1
+# e.g. var/lib/foo usr/share/man/man1/foo.1

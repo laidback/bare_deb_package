@@ -7,3 +7,5 @@
 # Shell scripts (sh and bash) other than init.d scripts shoud almost
 # certainly start with set -e so that errors are detected. Alternatively
 # you could check the exit status of *every* command.
+#
+# Use #DEBHELPER# token to enable debhelper to modify maintainer scripts.
